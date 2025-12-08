@@ -5,6 +5,9 @@ const nextConfig = {
   // Set basePath and assetPrefix so GitHub Pages serves static export from /<repo>/
   basePath: repoName,
   assetPrefix: repoName,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: repoName,
+  },
 };
 
 export default nextConfig;

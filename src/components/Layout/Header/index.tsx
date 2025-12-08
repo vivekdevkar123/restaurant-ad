@@ -101,7 +101,8 @@ const Header: React.FC = () => {
             {/*  */}
             <button
               onClick={() => setNavbarOpen(false)}
-              className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"
+              style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/closed.svg)` }}
+              className="bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"
               aria-label="Close menu Modal"
             ></button>
           </div>
