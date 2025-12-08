@@ -1,39 +1,21 @@
-# Chef’sKitchen – Free Responsive Tailwind CSS Kitchen Template
 
-#### Preview
+# Sopu's Kitchen — Sopu's Biryani House
 
- - [Demo](https://themewagon.github.io/materialpro-nextjs-free/)
+This repository contains the Sopu's Kitchen website — a rebranded, single-chef biryani-focused site built with Next.js and Tailwind CSS.
 
-#### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/chefskitchen/)
- 
- 
-## Getting Started
+## Getting started
 
-1. Clone from GitHub 
-```
-https://github.com/themewagon/chefs-kitchen-nextjs-free.git
-```
-2. Install Dependencies
+1. Install dependencies
 
 ```
-npm i
+npm install
 ```
 
-3. Run the development server:
+2. Run the development server
 
 ```
 npm run dev
 ```
 
-## Author
-
-Design and code are completely written by the 'Get Next.js Templates' design and development team.  
-
-
-## License
-
- - Design and Code is Copyright &copy; [Get Next.js Templates](https://getnextjstemplates.com/)
- - Licensed under [MIT]
- - Distributed by [ThemeWagon](https://themewagon.com)
+This project was adapted from a public template and rebranded for Sopu's Biryani House; external demo and distribution links have been removed from this README and the site.
 

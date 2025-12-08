@@ -5,68 +5,34 @@ export const FeaturesData: {
 }[] = [
     {
       imgSrc: '/images/features/featureOne.svg',
-      heading: "Menu variations",
-      subheading: "Sed ut perspiciatis unde omnis iste natus error",
+  heading: "Biryani varieties",
+  subheading: "Signature blends: Hyderabadi, Lucknowi and more",
     },
     {
       imgSrc: '/images/features/featureTwo.svg',
-      heading: "Cooking warw",
-      subheading: "Sed ut perspiciatis unde omnis iste natus error",
+  heading: "Aromatic spices",
+  subheading: "Hand-roasted masalas for rich flavour",
     },
     {
       imgSrc: '/images/features/featureThree.svg',
-      heading: "Best chef",
-      subheading: "Sed ut perspiciatis unde omnis iste natus error",
+  heading: "Chef Sopu",
+  subheading: "Master biryani chef with decades of experience",
     },
     {
       imgSrc: '/images/features/featureFour.svg',
-      heading: "Fast food",
-      subheading: "Sed ut perspiciatis unde omnis iste natus error",
+  heading: "Fresh ingredients",
+  subheading: "Sourced daily for authentic taste",
     }
 
   ]
 
-export const ExpertData: {
-  profession: string;
-  name: string;
-  imgSrc: string;
-}[] = [
-    {
-      profession: 'Senior Chef',
-      name: 'Shoo Thar Mien',
-      imgSrc: '/images/Expert/boyone.svg',
-    },
-    {
-      profession: 'Junior Chef',
-      name: 'Shoo Thar Mien',
-      imgSrc: '/images/Expert/girl.png',
-    },
-    {
-      profession: 'Junior Chef',
-      name: 'Shoo Thar Mien',
-      imgSrc: '/images/Expert/boytwo.svg',
-    },
-    {
-      profession: 'Junior Chef',
-      name: 'Shoo Thar Mien',
-      imgSrc: '/images/Expert/girl.png',
-    },
-    {
-      profession: 'Senior Chef',
-      name: 'Shoo Thar Mien',
-      imgSrc: '/images/Expert/boyone.svg',
-    },
-    {
-      profession: 'Junior Chef',
-      name: 'Shoo Thar Mien',
-      imgSrc: '/images/Expert/boytwo.svg',
-    },
-  ]
-
 // data.tsx
 export const galleryImages = [
-  { src: '/images/Gallery/foodone.jpg', name: 'Caesar Salad(187 Kcal)', price: 35 },
-  { src: '/images/Gallery/foodtwo.jpg', name: 'Christmas salad(118 Kcal)', price: 17 },
-  { src: '/images/Gallery/foodthree.jpg', name: 'Sauteed mushrooms with pumpkin and sweet pepper(238 kcal)', price: 45 },
-  { src: '/images/Gallery/foodfour.jpg', name: 'BBQ Chicken Feast Pizza(272 kcal)', price: 27 },
+  { src: '/images/Gallery/HyderabadiBiryani.jpg', name: 'Hyderabadi Biryani (Large)', price: 350 },
+  { src: '/images/Gallery/LucknowiBiryani.jpg', name: 'Lucknowi Biryani (Large)', price: 360 },
+  { src: '/images/Gallery/DumBiryani.jpg', name: 'Dum Biryani (Medium)', price: 220 },
+  { src: '/images/Gallery/VegetableBiryani.jpg', name: 'Vegetable Biryani (Medium)', price: 180 }, 
+  { src: '/images/Gallery/ChickenBiryani.jpg', name: 'Chicken Biryani (Large)', price: 300 },
+  { src: '/images/Gallery/MuttonBiryani.jpg', name: 'Mutton Biryani (Large)', price: 400 },
+  { src: '/images/Gallery/SeafoodBiryani.jpg', name: 'Seafood Biryani (Large)', price: 450 },
 ];

@@ -9,24 +9,24 @@ import { ExpertData } from "@/app/api/data";
 const Expert = () => {
     const settings = {
         dots: false,
-        infinite: true,
-        slidesToShow: 3,
+        infinite: false,
+        slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         speed: 500,
         cssEase: "linear",
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                 }
             },
             {
                 breakpoint: 800,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 }
             },
             {
@@ -42,9 +42,9 @@ const Expert = () => {
         <section className="bg-primary/15">
             <div className='container mx-auto lg:max-w-screen-xl md:max-w-screen-md'>
                 <div className="text-center">
-                    <p className='text-primary text-lg font-normal mb-3 tracking-widest uppercase'>EXPERT CHEFS</p>
+                    <p className='text-primary text-lg font-normal mb-3 tracking-widest uppercase'>BIRYANI HOUSE</p>
                     <h2 className="text-3xl lg:text-5xl font-semibold text-black dark:text-white">
-                        Let&apos;s meet the expert.
+                        Meet Chef Sopu — our biryani master
                     </h2>
                 </div>
                 <Slider {...settings}>

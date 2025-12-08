@@ -9,7 +9,7 @@ const Volunteer = () => {
                         Become a Volunteer
                     </h2>
                     <p className="text-16 text-white lg:max-w-60% mx-auto mb-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscelit. Nam malesu dolor sit amet, consectetur adipiscelit. consectetur adipiscelit. Nam malesu dolor.
+                        Join Chef Sopu's community to learn recipes, attend pop-ups, and help share authentic biryani traditions.
                     </p>
                     <div className="flex justify-center ">
                         <Link href="#" className="text-white bg-gradient-to-r from-error to-warning px-7 py-5 hover:from-transparent hover:to-transparent border border-transparent hover:border-error hover:text-error rounded">
