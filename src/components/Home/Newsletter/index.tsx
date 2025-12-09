@@ -59,7 +59,7 @@ const Newsletter = () => {
                     </div>
                     <div className="col-span-5 relative hidden md:flex items-center justify-center">
                         <div className="w-full max-w-sm">
-                            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/Newsletter/soup.svg`} alt="soup-image" width={520} height={502} className='rounded-xl shadow-lg' />
+                            <Image src={'/images/Newsletter/soup.svg'} alt="soup-image" width={520} height={502} className='rounded-xl shadow-lg' />
                         </div>
                     </div>
 

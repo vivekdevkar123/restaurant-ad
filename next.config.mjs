@@ -8,6 +8,9 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_BASE_PATH: repoName,
   },
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
