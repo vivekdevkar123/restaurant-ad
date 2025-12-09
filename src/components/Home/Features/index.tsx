@@ -14,9 +14,9 @@ const Features = () => {
                 </div>
                 <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-5 mt-32'>
                     {FeaturesData.map((items, i) => (
-                        <div className='p-8 relative rounded-3xl bg-gradient-to-b from-black/5 to-white dark:from-white/5 dark:to-black' key={i}>
-                            <div className='work-img-bg rounded-full flex justify-center md:absolute md:left-0 md:-top-24 lg:-top-28 w-full md:w-auto'>
-                                <Image src={items.imgSrc} alt={items.imgSrc} width={150} height={150} className='rounded-full' />
+                        <div className='p-8 relative rounded-3xl bg-gradient-to-b from-black/5 to-white dark:from-white/5 dark:to-black overflow-hidden' key={i}>
+                            <div className='work-img-bg rounded-full flex justify-center md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-24 lg:-top-28 w-full md:w-auto'>
+                                <Image src={items.imgSrc} alt={items.imgSrc} width={150} height={150} className='rounded-full w-36 h-36 md:w-40 md:h-40 lg:w-44 lg:h-44 object-cover' />
                             </div>
                             <h3 className='text-2xl text-black dark:text-white font-semibold text-center mt-6 md:mt-16'>{items.heading}</h3>
                             <p className='text-lg font-normal text-black/50 dark:text-white/50 text-center mt-2'>{items.subheading}</p>
