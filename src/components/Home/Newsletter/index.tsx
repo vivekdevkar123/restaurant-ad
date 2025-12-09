@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import { imageUrl } from '@/utils/publicPath';
 import { useState } from "react";
 
 const Newsletter = () => {
@@ -59,7 +60,7 @@ const Newsletter = () => {
                     </div>
                     <div className="col-span-5 relative hidden md:flex items-center justify-center">
                         <div className="w-full max-w-sm">
-                            <Image src={'/images/Newsletter/soup.svg'} alt="soup-image" width={520} height={502} className='rounded-xl shadow-lg' />
+                            <Image src={imageUrl('/images/Newsletter/soup.svg')} alt="soup-image" width={520} height={502} className='rounded-xl shadow-lg' />
                         </div>
                     </div>
 
