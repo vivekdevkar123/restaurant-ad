@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { imageUrl } from '@/utils/publicPath';
 
 
 const Logo: React.FC = () => {
