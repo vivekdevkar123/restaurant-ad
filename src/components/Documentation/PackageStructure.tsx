@@ -1,12 +1,11 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
-import { imageUrl } from '@/utils/publicPath';
 
 export const PackageStructure = () => {
-  const tline = imageUrl('/images/svgs/T-Line.svg');
-  const t_half_line = imageUrl('/images/svgs/T-half_line.svg');
-  const straight_line = imageUrl('/images/svgs/straight_group.svg');
-  const small_straight_line = imageUrl('/images/svgs/smal_straight_line.svg');
+  const tline = 'https://picsum.photos/20/50?random=tline';
+  const t_half_line = 'https://picsum.photos/20/25?random=thalf';
+  const straight_line = 'https://picsum.photos/20/100?random=straight';
+  const small_straight_line = 'https://picsum.photos/20/50?random=small';
   const Counts = [
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
     21, 22, 23, 24, 25, 26, 27, 28, 29, 30,

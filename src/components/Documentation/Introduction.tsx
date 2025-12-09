@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { imageUrl } from '@/utils/publicPath';
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
 import { DocNavigation } from "./DocNavigation";
@@ -11,31 +10,31 @@ export const Introduction = () => {
     {
       id: "1",
       packageName: "NextJs",
-      img: imageUrl('/images/documentation/Categories=Nextjs.svg'),
+      img: 'https://picsum.photos/100/100?random=nextjs',
       version: "15.0.3",
     },
     {
       id: "2",
       packageName: "React",
-      img: imageUrl('/images/documentation/Categories=React.svg'),
+      img: 'https://picsum.photos/100/100?random=react',
       version: "18.3.1",
     },
     {
       id: "3",
       packageName: "Tailwindcss",
-      img: imageUrl('/images/documentation/Categories=Tailwind.svg'),
+      img: 'https://picsum.photos/100/100?random=tailwind',
       version: "3.4.1",
     },
     {
       id: "4",
       packageName: "NextAuth",
-      img: imageUrl('/images/documentation/nextauth.png'),
+      img: 'https://picsum.photos/100/100?random=nextauth',
       version: "4.24.7",
     },
     {
       id: "5",
       packageName: "Typescript",
-      img: imageUrl('/images/documentation/Categories=Typescript.svg'),
+      img: 'https://picsum.photos/100/100?random=typescript',
       version: "5.6.3",
     },
   ];

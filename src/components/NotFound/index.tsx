@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { imageUrl } from '@/utils/publicPath';
 
 const NotFound = () => {
   return (
@@ -11,7 +10,7 @@ const NotFound = () => {
           <div className="w-full px-4 md:w-5/12 lg:w-6/12">
               <div className="relative mx-auto aspect-[129/138] max-w-[357px] text-center">
                   <Image
-                    src={imageUrl('/images/404.svg')}
+                    src='https://picsum.photos/357/400?random=404'
                 alt="image"
                 width={0}
                 height={0}

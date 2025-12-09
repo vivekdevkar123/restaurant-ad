@@ -6,22 +6,22 @@ export const FeaturesData: {
   subheading: string;
 }[] = [
     {
-      imgSrc: imageUrl('/images/features/featureOne.svg'),
+      imgSrc: 'https://picsum.photos/400/300?random=1',
   heading: "Biryani varieties",
   subheading: "Signature blends: Hyderabadi, Lucknowi and more",
     },
     {
-      imgSrc: imageUrl('/images/features/featureTwo.svg'),
+      imgSrc: 'https://picsum.photos/400/300?random=2',
   heading: "Aromatic spices",
   subheading: "Hand-roasted masalas for rich flavour",
     },
     {
-      imgSrc: imageUrl('/images/features/featureThree.svg'),
+      imgSrc: 'https://picsum.photos/400/300?random=3',
   heading: "Chef Sopu",
   subheading: "Master biryani chef with decades of experience",
     },
     {
-      imgSrc: imageUrl('/images/features/featureFour.svg'),
+      imgSrc: 'https://picsum.photos/400/300?random=4',
   heading: "Fresh ingredients",
   subheading: "Sourced daily for authentic taste",
     }
