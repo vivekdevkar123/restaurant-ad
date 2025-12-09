@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { useState } from "react";
+import { imageUrl } from '@/utils/publicPath';
 
 const Newsletter = () => {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -59,7 +60,7 @@ const Newsletter = () => {
                     </div>
                     <div className="col-span-5 relative hidden md:flex items-center justify-center">
                         <div className="w-full max-w-sm">
-                            <Image src='https://picsum.photos/520/502?random=soup' alt="soup-image" width={520} height={502} className='rounded-xl shadow-lg' />
+                            <Image src={imageUrl('/images/Newsletter/we-are-open.jpg')} alt="soup-image" width={520} height={502} className='rounded-xl shadow-lg' />
                         </div>
                     </div>
 

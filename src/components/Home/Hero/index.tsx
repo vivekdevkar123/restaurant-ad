@@ -22,7 +22,7 @@ const Hero = () => {
                     </div>
                     <div className='col-span-6 flex justify-center relative'>
                         <div className='flex bg-white p-2 gap-5 items-center bottom-10 left-10 rounded-xl absolute'>
-                            <Image src='https://picsum.photos/68/68?random=pizza' alt="pizza-image" width={68} height={68} />
+                            <Image src={imageUrl('/images/logo/logo.png')} alt="pizza-image" width={68} height={68} />
                             <p className='text-lg font-normal'>More than 500+ <br /> recipes.</p>
                         </div>
                         <Image src={imageUrl('/images/hero/banner-image.png')} alt="nothing" width={1000} height={805} />
