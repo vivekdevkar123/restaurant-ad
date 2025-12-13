@@ -30,11 +30,10 @@ export const FeaturesData: {
 
 // data.tsx
 export const galleryImages = [
-  { src: imageUrl('/images/Gallery/HyderabadiBiryani.jpg'), name: 'Hyderabadi Biryani (Large)', price: 350 },
-  { src: imageUrl('/images/Gallery/LucknowiBiryani.jpg'), name: 'Lucknowi Biryani (Large)', price: 360 },
-  { src: imageUrl('/images/Gallery/DumBiryani.jpg'), name: 'Dum Biryani (Medium)', price: 220 },
-  { src: imageUrl('/images/Gallery/VegetableBiryani.jpg'), name: 'Vegetable Biryani (Medium)', price: 180 },
-  { src: imageUrl('/images/Gallery/ChickenBiryani.jpg'), name: 'Chicken Biryani (Large)', price: 300 },
-  { src: imageUrl('/images/Gallery/MuttonBiryani.jpg'), name: 'Mutton Biryani (Large)', price: 400 },
-  { src: imageUrl('/images/Gallery/SeafoodBiryani.jpg'), name: 'Seafood Biryani (Large)', price: 450 },
+  { src: imageUrl('/images/Gallery/ChickenBiryani.jpg'), name: 'Chicken Biryani', price: 99 },
+  { src: imageUrl('/images/Gallery/daal_khichadi.jpg'), name: 'Dal Khichadi', price: 89 },
+  { src: imageUrl('/images/Gallery/omlet.jpg'), name: 'Egg Omlet', price: 39 },
+  { src: imageUrl('/images/Gallery/boiled_egg.jpg'), name: 'Boiled Egg', price: 29 },
+  { src: imageUrl('/images/Gallery/raita.jpg'), name: 'Raita', price: 29 },
+  { src: imageUrl('/images/Gallery/water_bottal.jpg'), name: 'Water Bottal [1L]', price: 15 },
 ];

@@ -14,7 +14,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
       <Link
         href={item.href}
         onClick={item.submenu ? handleToggle : undefined}
-        className="flex items-center justify-between w-full py-2 text-muted focus:outline-none"
+        className="flex items-center justify-between w-full py-3 px-2 text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-all duration-300 focus:outline-none"
       >
         {item.label}
         {item.submenu && (
@@ -36,12 +36,12 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
         )}
       </Link>
       {submenuOpen && item.submenu && (
-        <div className="bg-white p-2 w-full">
+        <div className="bg-gray-50 dark:bg-gray-700 p-2 w-full rounded-lg mt-1">
           {item.submenu.map((subItem, index) => (
             <Link
               key={index}
               href={subItem.href}
-              className="block py-2 text-gray-500 hover:bg-gray-200"
+              className="block py-2 px-3 text-gray-600 dark:text-gray-300 hover:text-primary hover:bg-white dark:hover:bg-gray-600 rounded-lg transition-all duration-300"
             >
               {subItem.label}
             </Link>

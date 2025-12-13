@@ -14,7 +14,7 @@ const Logo: React.FC = () => {
         style={{ width: 'auto', height: 'auto' }}
         quality={100}
       />
-  Sopu's kitchen
+  Sopu's Cloud kitchen
     </Link>
   );
 };

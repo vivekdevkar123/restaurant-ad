@@ -11,32 +11,44 @@ const Newsletter = () => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const onSubmit = async (e: React.FormEvent) => {
+    const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        e.stopPropagation();
+        
         setStatus("sending");
+        console.log('Submitting form data:', form);
+        
         try {
             const res = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(form),
             });
+            
+            console.log('API Response status:', res.status);
+            const data = await res.json();
+            console.log('API Response data:', data);
+            
             if (res.ok) {
                 setStatus('success');
                 setForm({ name: "", email: "", message: "" });
+                setTimeout(() => setStatus('idle'), 5000);
             } else {
                 setStatus('error');
+                console.error('API error:', data);
             }
         } catch (err) {
             setStatus('error');
+            console.error('Submission error:', err);
         }
     };
 
     return (
-        <section className='relative'>
-            <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md ">
-                <div className="bg-primary rounded-2xl shadow-xl grid grid-cols-1 gap-y-8 gap-x-6 md:grid-cols-12 xl:gap-x-8 p-8">
+        <section className='relative py-8' id='contact-section'>
+            <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4">
+                <div className="bg-primary rounded-2xl shadow-xl grid grid-cols-1 gap-y-8 gap-x-6 md:grid-cols-12 xl:gap-x-8 p-6 md:p-8">
                     <div className="col-span-7">
-                        <div className="m-4 lg:ml-10 lg:mt-6 lg:mb-6">
+                        <div className="md:m-4 lg:ml-10 lg:mt-6 lg:mb-6">
                             <p className="text-lg font-normal text-white mb-2 ls-51"> CONTACT US </p>
                             <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
                                 Send feedback or ask about catering
@@ -44,16 +56,16 @@ const Newsletter = () => {
 
                             <form onSubmit={onSubmit} className="space-y-4">
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    <input name="name" value={form.name} onChange={onChange} placeholder="Your name" className="w-full py-3 px-4 rounded-lg bg-white/95 focus:outline-none focus:ring-2 focus:ring-yellow-300" required />
-                                    <input name="email" type="email" value={form.email} onChange={onChange} placeholder="Your email" className="w-full py-3 px-4 rounded-lg bg-white/95 focus:outline-none focus:ring-2 focus:ring-yellow-300" required />
+                                    <input name="name" value={form.name} onChange={onChange} placeholder="Your name" className="w-full py-3 px-4 rounded-lg bg-white/95 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-300" required />
+                                    <input name="email" type="email" value={form.email} onChange={onChange} placeholder="Your email" className="w-full py-3 px-4 rounded-lg bg-white/95 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-300" required />
                                 </div>
-                                <textarea name="message" value={form.message} onChange={onChange} placeholder="Your message" className="w-full py-3 px-4 rounded-lg bg-white/95 focus:outline-none focus:ring-2 focus:ring-yellow-300 h-36" required />
+                                <textarea name="message" value={form.message} onChange={onChange} placeholder="Your message" className="w-full py-3 px-4 rounded-lg bg-white/95 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-300 h-36" required />
                                 <div className="flex items-center gap-4">
-                                    <button disabled={status === 'sending'} type="submit" className="bg-white text-primary px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition-transform">
+                                    <button disabled={status === 'sending'} type="submit" className="bg-white text-primary px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition-transform disabled:opacity-50">
                                         {status === 'sending' ? 'Sending...' : 'Send Message'}
                                     </button>
-                                    {status === 'success' && <span className="ml-2 text-white">Thanks — we will reply soon.</span>}
-                                    {status === 'error' && <span className="ml-2 text-yellow-200">Submission failed. Try again.</span>}
+                                    {status === 'success' && <span className="ml-2 text-white">✓ Thanks — we will reply soon.</span>}
+                                    {status === 'error' && <span className="ml-2 text-yellow-200">✗ Submission failed. Try again.</span>}
                                 </div>
                             </form>
                         </div>

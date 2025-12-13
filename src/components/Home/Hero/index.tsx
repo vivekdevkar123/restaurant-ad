@@ -15,8 +15,9 @@ const Hero = () => {
                             Sopu's Biryani — Authentic Flavour, Timeless Recipe
                         </h1>
                         <p className='text-black/55 dark:text-white/50 lg:text-lg font-normal mb-10 lg:text-start text-center'>Experience handcrafted biryanis made with time-honoured spices and slow-cooked perfection — each plate prepared by Chef Sopu.</p>
-                        <div className='md:flex align-middle justify-center lg:justify-start'>
-                            <Link href='#about-section' className='flex border w-full md:w-auto mt-5 md:mt-0 border-primary justify-center rounded-full text-xl font-medium items-center py-5 px-10 text-primary hover:text-white hover:bg-primary'>Explore Menu</Link>
+                        <div className='md:flex align-middle justify-center lg:justify-start gap-4 mb-8 md:mb-0'>
+                            <Link href='https://zomato.onelink.me/xqzv/m1g9ltnd' target='_blank' rel='noopener noreferrer' className='flex border w-full md:w-auto mt-5 md:mt-0 border-red-500 bg-red-500 justify-center rounded-full text-xl font-medium items-center py-5 px-10 text-white hover:bg-red-600 transition-colors'>Order on Zomato</Link>
+                            <Link href='https://www.swiggy.com/menu/1271738?source=sharing' target='_blank' rel='noopener noreferrer' className='flex border w-full md:w-auto mt-5 md:mt-0 border-orange-500 bg-orange-500 justify-center rounded-full text-xl font-medium items-center py-5 px-10 text-white hover:bg-orange-600 transition-colors'>Order on Swiggy</Link>
                         </div>
                     </div>
                     <div className='col-span-6 flex justify-center relative'>
@@ -24,7 +25,7 @@ const Hero = () => {
                             <Image src={imageUrl('/images/logo/icon.png')} alt="pizza-image" width={68} height={68} />
                             <p className='text-lg font-normal'>More than 500+ <br /> recipes.</p>
                         </div>
-                        <Image src={imageUrl('/images/hero/banner-image.png')} alt="nothing" width={1000} height={805} />
+                        <Image src={imageUrl('/images/hero/banner_image.jpg')} alt="Sopu's Biryani hero image" width={500} height={1000} className="rounded-3xl w-full h-auto" />
                     </div>
                 </div>
             </div>

@@ -12,9 +12,7 @@ const NotFound = () => {
                   <Image
                     src='https://picsum.photos/357/400?random=404'
                 alt="image"
-                width={0}
-                height={0}
-                layout="responsive"
+                fill
                 quality={100}
                 className="mx-auto max-w-full"
               />

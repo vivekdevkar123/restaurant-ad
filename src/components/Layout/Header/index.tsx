@@ -66,17 +66,9 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="#" className="text-lg font-medium hover:text-primary">
-              <Icon
-                icon="solar:phone-bold"
-                className="text-primary text-3xl inline-block me-2"
-              />
-              +91 9370568621
-            </Link>
-            {/* Sign in/up removed */}
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
-              className="block lg:hidden p-2 rounded-lg"
+              className="block lg:hidden p-2 rounded-lg bg-primary hover:bg-primary/80 transition-colors"
               aria-label="Toggle mobile menu"
             >
               <span className="block w-6 h-0.5 bg-white"></span>
@@ -90,21 +82,21 @@ const Header: React.FC = () => {
         )}
         <div
           ref={mobileMenuRef}
-          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-darkmode shadow-lg transform transition-transform duration-300 max-w-xs ${navbarOpen ? "translate-x-0" : "translate-x-full"
+          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white dark:bg-gray-800 shadow-2xl transform transition-transform duration-300 max-w-xs ${navbarOpen ? "translate-x-0" : "translate-x-full"
             } z-50`}
         >
-          <div className="flex items-center justify-between p-4">
-            <h2 className="text-lg font-bold text-midnight_text dark:text-midnight_text">
+          <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+            <h2 className="text-lg font-bold">
               <Logo />
             </h2>
 
-            {/*  */}
             <button
               onClick={() => setNavbarOpen(false)}
-              style={{ backgroundImage: 'url(https://picsum.photos/20/20?random=close)' }}
-              className="bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"
+              className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
               aria-label="Close menu Modal"
-            ></button>
+            >
+              <Icon icon="mdi:close" width="24" height="24" className="text-gray-700 dark:text-gray-200" />
+            </button>
           </div>
           <nav className="flex flex-col items-start p-4">
             {headerData.map((item, index) => (

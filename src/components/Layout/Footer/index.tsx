@@ -5,59 +5,79 @@ import Logo from "../Header/Logo";
 
 const Footer: FC = () => {
   return (
-    <footer className="pt-16 bg-darkmode">
+    <footer className="pt-16 pb-12 bg-darkmode">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
           <div className="md:col-span-1">
             <Logo />
             <p className="text-xs font-medium text-grey dark:text-white/50 mt-4 max-w-xs">
-              Sopu's Biryani House — home of authentic slow-cooked biryanis.
+              Sopu's Cloud Kitchen — home of authentic slow-cooked biryanis.
             </p>
           </div>
 
           <div className="md:col-span-2 flex items-center justify-end">
             <div className="hidden sm:flex md:items-center md:gap-4">
               <div className="flex gap-3">
-                <Link href="#" className="group bg-white hover:bg-primary rounded-full shadow p-2">
-                  <Icon icon="fa6-brands:facebook-f" width="14" height="14" className="group-hover:text-white text-black" />
+                <Link 
+                  href="https://zomato.onelink.me/xqzv/m1g9ltnd" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group bg-red-500 hover:bg-red-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                  title="Order on Zomato"
+                >
+                  <span className="text-white font-bold text-xl">Z</span>
                 </Link>
-                <Link href="#" className="group bg-white hover:bg-primary rounded-full shadow p-2">
-                  <Icon icon="fa6-brands:instagram" width="14" height="14" className="group-hover:text-white text-black" />
+                <Link 
+                  href="https://www.swiggy.com/menu/1271738?source=sharing" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                  title="Order on Swiggy"
+                >
+                  <Icon icon="simple-icons:swiggy" width="20" height="20" className="text-white" />
                 </Link>
-                <Link href="#" className="group bg-white hover:bg-primary rounded-full shadow p-2">
-                  <Icon icon="fa6-brands:x-twitter" width="14" height="14" className="group-hover:text-white text-black" />
+                <Link 
+                  href="https://maps.app.goo.gl/1U935c44DknKhRRs6?g_st=aw" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group bg-blue-500 hover:bg-blue-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                  title="View Location on Google Maps"
+                >
+                  <Icon icon="mdi:google-maps" width="20" height="20" className="text-white" />
                 </Link>
-              </div>
-
-              <div>
-                <Link href="#" className="text-sm text-black/70 dark:text-white/70 px-3 hover:text-primary">Privacy policy</Link>
-                <Link href="#" className="text-sm text-black/70 dark:text-white/70 px-3 hover:text-primary">Terms</Link>
               </div>
             </div>
 
             {/* On very small screens, show icons below description */}
             <div className="sm:hidden mt-4 flex gap-3">
-              <Link href="#" className="group bg-white hover:bg-primary rounded-full shadow p-2">
-                <Icon icon="fa6-brands:facebook-f" width="14" height="14" className="group-hover:text-white text-black" />
+              <Link 
+                href="https://zomato.onelink.me/xqzv/m1g9ltnd" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group bg-red-500 hover:bg-red-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                title="Order on Zomato"
+              >
+                <span className="text-white font-bold text-xl">Z</span>
               </Link>
-              <Link href="#" className="group bg-white hover:bg-primary rounded-full shadow p-2">
-                <Icon icon="fa6-brands:instagram" width="14" height="14" className="group-hover:text-white text-black" />
+              <Link 
+                href="https://www.swiggy.com/menu/1271738?source=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                title="Order on Swiggy"
+              >
+                <Icon icon="simple-icons:swiggy" width="20" height="20" className="text-white" />
               </Link>
-              <Link href="#" className="group bg-white hover:bg-primary rounded-full shadow p-2">
-                <Icon icon="fa6-brands:x-twitter" width="14" height="14" className="group-hover:text-white text-black" />
+              <Link 
+                href="https://maps.app.goo.gl/1U935c44DknKhRRs6?g_st=aw" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group bg-blue-500 hover:bg-blue-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                title="View Location on Google Maps"
+              >
+                <Icon icon="mdi:google-maps" width="20" height="20" className="text-white" />
               </Link>
             </div>
-          </div>
-        </div>
-
-        <div className="border-t border-grey/15 dark:border-white/15 py-10 flex justify-between items-center">
-          <div>
-            <p className="text-sm text-black/70 dark:text-white/70">©2025 Sopu's Biryani House</p>
-          </div>
-
-          <div className="ml-auto">
-            <Link href="#" className="text-sm text-black/70 dark:text-white/70 px-5 border-r border-grey/15 dark:border-white/15 hover:text-primary dark:hover:text-primary">Privacy policy</Link>
-            <Link href="#" className="text-sm text-black/70 dark:text-white/70 px-5 hover:text-primary dark:hover:text-primary">Terms & conditions</Link>
           </div>
         </div>
       </div>
