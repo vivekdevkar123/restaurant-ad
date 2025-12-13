@@ -44,8 +44,16 @@ const Cook = () => {
                                 rel='noopener noreferrer'
                                 className='flex items-center justify-center gap-2 text-xl font-medium rounded-full text-white py-5 px-6 bg-blue-600 hover:bg-blue-700 lg:px-10 w-fit border border-blue-600 hover:border-blue-700 transition-all duration-300 shadow-md'
                             >
-                                <Icon icon="mdi:google" width="24" height="24" />
-                                Rate us on Google
+                                <span className="flex items-center gap-2">
+                                    <span>Rate Us</span>
+                                    <span className="flex gap-1">
+                                        <Icon icon="mdi:star-outline" width="20" height="20" />
+                                        <Icon icon="mdi:star-outline" width="20" height="20" />
+                                        <Icon icon="mdi:star-outline" width="20" height="20" />
+                                        <Icon icon="mdi:star-outline" width="20" height="20" />
+                                        <Icon icon="mdi:star-outline" width="20" height="20" />
+                                    </span>
+                                </span>
                             </Link>
                         </div>
                     </div>

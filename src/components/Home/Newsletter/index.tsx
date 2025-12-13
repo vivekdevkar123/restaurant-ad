@@ -58,8 +58,16 @@ const Newsletter = () => {
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-3 w-full bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold py-5 px-8 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
                                 >
-                                    <Icon icon="mdi:google" width="28" height="28" />
-                                    Rate us on Google
+                                    <span className="flex items-center gap-2">
+                                        <span>Rate Us</span>
+                                        <span className="flex gap-1">
+                                            <Icon icon="mdi:star-outline" width="22" height="22" />
+                                            <Icon icon="mdi:star-outline" width="22" height="22" />
+                                            <Icon icon="mdi:star-outline" width="22" height="22" />
+                                            <Icon icon="mdi:star-outline" width="22" height="22" />
+                                            <Icon icon="mdi:star-outline" width="22" height="22" />
+                                        </span>
+                                    </span>
                                 </Link>
                             </div>
 
