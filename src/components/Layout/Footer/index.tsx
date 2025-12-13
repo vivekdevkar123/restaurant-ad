@@ -45,6 +45,15 @@ const Footer: FC = () => {
                 >
                   <Icon icon="mdi:google-maps" width="20" height="20" className="text-white" />
                 </Link>
+                <Link 
+                  href="https://www.instagram.com/sopus_cloudkitchen?igsh=ZjkwdTgwMmZ6c3Bt" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                  title="Follow us on Instagram"
+                >
+                  <Icon icon="mdi:instagram" width="20" height="20" className="text-white" />
+                </Link>
               </div>
             </div>
 
@@ -76,6 +85,15 @@ const Footer: FC = () => {
                 title="View Location on Google Maps"
               >
                 <Icon icon="mdi:google-maps" width="20" height="20" className="text-white" />
+              </Link>
+              <Link 
+                href="https://www.instagram.com/sopus_cloudkitchen?igsh=ZjkwdTgwMmZ6c3Bt" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                title="Follow us on Instagram"
+              >
+                <Icon icon="mdi:instagram" width="20" height="20" className="text-white" />
               </Link>
             </div>
           </div>

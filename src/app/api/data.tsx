@@ -8,7 +8,7 @@ export const FeaturesData: {
     {
       imgSrc: imageUrl('/images/Features/biryani.jpg'),
       heading: "Biryani varieties",
-      subheading: "Signature blends: Hyderabadi, Lucknowi and more",
+      subheading: "Special Chicken Dum Biryani",
     },
     {
       imgSrc: imageUrl('/images/Features/aromatic-spices.jpg'),
@@ -30,7 +30,7 @@ export const FeaturesData: {
 
 // data.tsx
 export const galleryImages = [
-  { src: imageUrl('/images/Gallery/ChickenBiryani.jpg'), name: 'Chicken Biryani', price: 99 },
+  { src: imageUrl('/images/Gallery/ChickenBiryani.jpg'), name: 'Chicken Biryani', price: 119 },
   { src: imageUrl('/images/Gallery/daal_khichadi.JPG'), name: 'Dal Khichadi', price: 89 },
   { src: imageUrl('/images/Gallery/omlet.JPG'), name: 'Egg Omlet', price: 39 },
   { src: imageUrl('/images/Gallery/boiled_egg.JPG'), name: 'Boiled Egg', price: 29 },

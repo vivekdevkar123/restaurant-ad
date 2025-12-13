@@ -1,81 +1,77 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
 import { imageUrl } from '@/utils/publicPath';
+import { Icon } from "@iconify/react";
 
 const Newsletter = () => {
-    const [form, setForm] = useState({ name: "", email: "", message: "" });
-    const [status, setStatus] = useState<null | "idle" | "sending" | "success" | "error">("idle");
-
-    const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setForm({ ...form, [e.target.name]: e.target.value });
-    };
-
-    const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        setStatus("sending");
-        console.log('Submitting form data:', form);
-        
-        try {
-            const res = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(form),
-            });
-            
-            console.log('API Response status:', res.status);
-            const data = await res.json();
-            console.log('API Response data:', data);
-            
-            if (res.ok) {
-                setStatus('success');
-                setForm({ name: "", email: "", message: "" });
-                setTimeout(() => setStatus('idle'), 5000);
-            } else {
-                setStatus('error');
-                console.error('API error:', data);
-            }
-        } catch (err) {
-            setStatus('error');
-            console.error('Submission error:', err);
-        }
-    };
+    const phoneNumber = "919370568621"; // WhatsApp number with country code
+    const whatsappMessage = encodeURIComponent(
+        "Hello Sopu's Cloud Kitchen! 👋\n\nI would like to place an order for biryani.\n\nPlease share the menu and pricing details.\n\nThank you!"
+    );
+    
+    const emailAddress = "sopudevkar90@gmail.com";
+    const emailSubject = encodeURIComponent("Query/Concern - Sopu's Cloud Kitchen");
+    const emailBody = encodeURIComponent(
+        "Hello Sopu's Cloud Kitchen Team,\n\nI would like to reach out regarding:\n\n[Please describe your query or concern here]\n\nThank you!"
+    );
 
     return (
         <section className='relative py-8' id='contact-section'>
             <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4">
                 <div className="bg-primary rounded-2xl shadow-xl grid grid-cols-1 gap-y-8 gap-x-6 md:grid-cols-12 xl:gap-x-8 p-6 md:p-8">
-                    <div className="col-span-7">
+                    <div className="col-span-7 flex flex-col justify-center">
                         <div className="md:m-4 lg:ml-10 lg:mt-6 lg:mb-6">
-                            <p className="text-lg font-normal text-white mb-2 ls-51"> CONTACT US </p>
+                            <p className="text-lg font-normal text-white mb-2 ls-51 uppercase tracking-widest"> CONTACT US </p>
                             <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-                                Send feedback or ask about catering
+                                Get in Touch with Us
                             </h2>
+                            <p className="text-white/90 text-lg mb-8 leading-relaxed">
+                                Ready to order authentic biryani or have a question? We're here to help! Choose your preferred way to connect with us.
+                            </p>
 
-                            <form onSubmit={onSubmit} className="space-y-4">
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    <input name="name" value={form.name} onChange={onChange} placeholder="Your name" className="w-full py-3 px-4 rounded-lg bg-white/95 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-300" required />
-                                    <input name="email" type="email" value={form.email} onChange={onChange} placeholder="Your email" className="w-full py-3 px-4 rounded-lg bg-white/95 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-300" required />
+                            <div className="space-y-4">
+                                {/* WhatsApp Button */}
+                                <Link
+                                    href={`https://wa.me/${phoneNumber}?text=${whatsappMessage}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center gap-3 w-full bg-green-500 hover:bg-green-600 text-white text-xl font-semibold py-5 px-8 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
+                                >
+                                    <Icon icon="mdi:whatsapp" width="28" height="28" />
+                                    Place an Order
+                                </Link>
+
+                                {/* Email Button */}
+                                <Link
+                                    href={`mailto:${emailAddress}?subject=${emailSubject}&body=${emailBody}`}
+                                    className="flex items-center justify-center gap-3 w-full bg-white hover:bg-gray-100 text-primary text-xl font-semibold py-5 px-8 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
+                                >
+                                    <Icon icon="mdi:email" width="28" height="28" />
+                                    Raise a Concern
+                                </Link>
+                            </div>
+
+                            {/* Additional Contact Info */}
+                            <div className="mt-8 pt-6 border-t border-white/20">
+                                <div className="flex flex-col gap-3 text-white/80">
+                                    <div className="flex items-center gap-3">
+                                        <Icon icon="mdi:phone" width="20" height="20" />
+                                        <span>+91 9370568621</span>
+                                    </div>
+                                    <div className="flex items-center gap-3">
+                                        <Icon icon="mdi:email-outline" width="20" height="20" />
+                                        <span>sopudevkar90@gmail.com</span>
+                                    </div>
                                 </div>
-                                <textarea name="message" value={form.message} onChange={onChange} placeholder="Your message" className="w-full py-3 px-4 rounded-lg bg-white/95 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-300 h-36" required />
-                                <div className="flex items-center gap-4">
-                                    <button disabled={status === 'sending'} type="submit" className="bg-white text-primary px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition-transform disabled:opacity-50">
-                                        {status === 'sending' ? 'Sending...' : 'Send Message'}
-                                    </button>
-                                    {status === 'success' && <span className="ml-2 text-white">✓ Thanks — we will reply soon.</span>}
-                                    {status === 'error' && <span className="ml-2 text-yellow-200">✗ Submission failed. Try again.</span>}
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                     <div className="col-span-5 relative hidden md:flex items-center justify-center">
                         <div className="w-full max-w-sm">
-                            <Image src={imageUrl('/images/Newsletter/we-are-open.jpg')} alt="soup-image" width={520} height={502} className='rounded-xl shadow-lg' />
+                            <Image src={imageUrl('/images/Newsletter/we-are-open.jpg')} alt="Contact Sopu's Kitchen" width={520} height={502} className='rounded-xl shadow-lg' />
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

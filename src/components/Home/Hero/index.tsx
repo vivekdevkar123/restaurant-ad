@@ -21,9 +21,9 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className='col-span-6 flex justify-center relative'>
-                        <div className='flex bg-white p-2 gap-5 items-center bottom-10 left-10 rounded-xl absolute'>
-                            <Image src={imageUrl('/images/logo/icon.png')} alt="pizza-image" width={68} height={68} />
-                            <p className='text-lg font-normal'>More than 500+ <br /> recipes.</p>
+                        <div className='flex bg-white p-2 gap-2 md:gap-5 items-center bottom-4 right-4 md:bottom-10 md:left-10 md:right-auto rounded-lg md:rounded-xl absolute shadow-lg'>
+                            <Image src={imageUrl('/images/logo/icon.png')} alt="pizza-image" width={68} height={68} className='w-10 h-10 md:w-[68px] md:h-[68px]' />
+                            <p className='text-sm md:text-lg font-normal text-black'>More than 100+ <br /> recipes.</p>
                         </div>
                         <Image src={imageUrl('/images/hero/banner_image.JPG')} alt="Sopu's Biryani hero image" width={500} height={1000} className="rounded-3xl w-full h-auto" />
                     </div>
