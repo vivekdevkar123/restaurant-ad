@@ -56,16 +56,16 @@ const Newsletter = () => {
                                     href="https://g.page/r/CXWJajn32WDwEBI/review"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-3 w-full bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold py-5 px-8 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
+                                    className="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-xl font-semibold py-5 px-8 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
                                 >
-                                    <span className="flex items-center gap-2">
+                                    <span className="flex items-center gap-3">
                                         <span>Rate Us</span>
-                                        <span className="flex gap-1">
-                                            <Icon icon="mdi:star-outline" width="22" height="22" />
-                                            <Icon icon="mdi:star-outline" width="22" height="22" />
-                                            <Icon icon="mdi:star-outline" width="22" height="22" />
-                                            <Icon icon="mdi:star-outline" width="22" height="22" />
-                                            <Icon icon="mdi:star-outline" width="22" height="22" />
+                                        <span className="flex gap-0.5 text-yellow-300">
+                                            <Icon icon="mdi:star" width="24" height="24" />
+                                            <Icon icon="mdi:star" width="24" height="24" />
+                                            <Icon icon="mdi:star" width="24" height="24" />
+                                            <Icon icon="mdi:star" width="24" height="24" />
+                                            <Icon icon="mdi:star" width="24" height="24" />
                                         </span>
                                     </span>
                                 </Link>

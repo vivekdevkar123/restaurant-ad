@@ -42,16 +42,16 @@ const Cook = () => {
                                 href='https://g.page/r/CXWJajn32WDwEBI/review' 
                                 target='_blank' 
                                 rel='noopener noreferrer'
-                                className='flex items-center justify-center gap-2 text-xl font-medium rounded-full text-white py-5 px-6 bg-blue-600 hover:bg-blue-700 lg:px-10 w-fit border border-blue-600 hover:border-blue-700 transition-all duration-300 shadow-md'
+                                className='flex items-center justify-center gap-2 text-xl font-medium rounded-full text-white py-5 px-6 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 lg:px-10 w-fit border border-blue-600 hover:border-blue-700 transition-all duration-300 shadow-md'
                             >
                                 <span className="flex items-center gap-2">
                                     <span>Rate Us</span>
-                                    <span className="flex gap-1">
-                                        <Icon icon="mdi:star-outline" width="20" height="20" />
-                                        <Icon icon="mdi:star-outline" width="20" height="20" />
-                                        <Icon icon="mdi:star-outline" width="20" height="20" />
-                                        <Icon icon="mdi:star-outline" width="20" height="20" />
-                                        <Icon icon="mdi:star-outline" width="20" height="20" />
+                                    <span className="flex gap-0.5 text-yellow-300">
+                                        <Icon icon="mdi:star" width="22" height="22" />
+                                        <Icon icon="mdi:star" width="22" height="22" />
+                                        <Icon icon="mdi:star" width="22" height="22" />
+                                        <Icon icon="mdi:star" width="22" height="22" />
+                                        <Icon icon="mdi:star" width="22" height="22" />
                                     </span>
                                 </span>
                             </Link>

@@ -1,0 +1,7 @@
+# robots.txt for Sopu's Cloud Kitchen
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sopuskitchen.com/sitemap.xml
+

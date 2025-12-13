@@ -1,6 +1,6 @@
 {
-  "name": "crypgo_project",
-  "version": "0.1.0",
+  "name": "sopus-cloud-kitchen",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
