@@ -25,7 +25,7 @@ const Hero = () => {
                             <Image src={imageUrl('/images/logo/icon.png')} alt="pizza-image" width={68} height={68} />
                             <p className='text-lg font-normal'>More than 500+ <br /> recipes.</p>
                         </div>
-                        <Image src={imageUrl('/images/hero/banner_image.jpg')} alt="Sopu's Biryani hero image" width={500} height={1000} className="rounded-3xl w-full h-auto" />
+                        <Image src={imageUrl('/images/hero/banner_image.JPG')} alt="Sopu's Biryani hero image" width={500} height={1000} className="rounded-3xl w-full h-auto" />
                     </div>
                 </div>
             </div>

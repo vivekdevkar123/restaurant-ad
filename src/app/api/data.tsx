@@ -31,9 +31,9 @@ export const FeaturesData: {
 // data.tsx
 export const galleryImages = [
   { src: imageUrl('/images/Gallery/ChickenBiryani.jpg'), name: 'Chicken Biryani', price: 99 },
-  { src: imageUrl('/images/Gallery/daal_khichadi.jpg'), name: 'Dal Khichadi', price: 89 },
-  { src: imageUrl('/images/Gallery/omlet.jpg'), name: 'Egg Omlet', price: 39 },
-  { src: imageUrl('/images/Gallery/boiled_egg.jpg'), name: 'Boiled Egg', price: 29 },
+  { src: imageUrl('/images/Gallery/daal_khichadi.JPG'), name: 'Dal Khichadi', price: 89 },
+  { src: imageUrl('/images/Gallery/omlet.JPG'), name: 'Egg Omlet', price: 39 },
+  { src: imageUrl('/images/Gallery/boiled_egg.JPG'), name: 'Boiled Egg', price: 29 },
   { src: imageUrl('/images/Gallery/raita.jpg'), name: 'Raita', price: 29 },
   { src: imageUrl('/images/Gallery/water_bottal.jpg'), name: 'Water Bottal [1L]', price: 15 },
 ];
