@@ -21,7 +21,7 @@ const Cook = () => {
                         </h2>
                         <p className='text-black/50 dark:text-white/50 md:text-lg font-normal mb-10 text-start mt-2'>Chef Sopu prepares each biryani with layered rice, marinated meat, and a secret blend of spices. Our process celebrates slow-cooking and balance of aroma and texture.</p>
                         <p className='text-black/50 dark:text-white/50 md:text-lg font-normal mb-10 text-start mt-1'>From dum-cooking techniques to spice-roasting tips, discover how Sopu crafts authentic biryanis.</p>
-                        <div className='flex flex-col sm:flex-row gap-4'>
+                        <div className='flex flex-col sm:flex-row sm:flex-wrap gap-4'>
                             <Link 
                                 href='tel:+919370568621'
                                 className='flex items-center justify-center gap-2 text-xl font-medium rounded-full text-white py-5 px-6 bg-primary lg:px-10 w-fit border border-primary hover:bg-transparent hover:text-primary transition-all duration-300'
@@ -37,6 +37,15 @@ const Cook = () => {
                             >
                                 <Icon icon="mdi:map-marker" width="24" height="24" />
                                 Get Location
+                            </Link>
+                            <Link 
+                                href='https://g.page/r/CXWJajn32WDwEBI/review' 
+                                target='_blank' 
+                                rel='noopener noreferrer'
+                                className='flex items-center justify-center gap-2 text-xl font-medium rounded-full text-white py-5 px-6 bg-blue-600 hover:bg-blue-700 lg:px-10 w-fit border border-blue-600 hover:border-blue-700 transition-all duration-300 shadow-md'
+                            >
+                                <Icon icon="mdi:google" width="24" height="24" />
+                                Rate us on Google
                             </Link>
                         </div>
                     </div>

@@ -50,6 +50,17 @@ const Newsletter = () => {
                                     <Icon icon="mdi:email" width="28" height="28" />
                                     Raise a Concern
                                 </Link>
+
+                                {/* Google Review Button */}
+                                <Link
+                                    href="https://g.page/r/CXWJajn32WDwEBI/review"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center gap-3 w-full bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold py-5 px-8 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
+                                >
+                                    <Icon icon="mdi:google" width="28" height="28" />
+                                    Rate us on Google
+                                </Link>
                             </div>
 
                             {/* Additional Contact Info */}
