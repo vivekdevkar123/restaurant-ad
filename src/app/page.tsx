@@ -7,7 +7,7 @@ import Newsletter from "@/components/Home/Newsletter";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home - Sopu's Cloud Kitchen | Authentic Biryani Online",
+  title: "Sopu's Cloud Kitchen | Authentic Biryani Online",
   description: "Welcome to Sopu's Cloud Kitchen! Order authentic handcrafted biryani online. Experience traditional slow-cooked biryani with aromatic spices and premium ingredients. Available on Zomato & Swiggy.",
 };
 
